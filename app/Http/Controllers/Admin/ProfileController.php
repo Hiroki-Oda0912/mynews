@@ -28,3 +28,8 @@ class ProfileController extends Controller
         return redirect('admin/profile/edit');
     }
 }
+
+Route::group(['prefix' => 'admin'], function() {
+     Route::get('profile/create', 'Admin\ProfileController@add');
+     Route::get('profile/edit', 'Admin\ProfileController@edit');
+});
