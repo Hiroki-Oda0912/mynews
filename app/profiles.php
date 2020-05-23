@@ -13,6 +13,6 @@ class profiles extends Model
         'name' => 'required',
         'gender' => 'required',
         'hobby' => 'required',
-        'intoroduction' => 'required',
+        'introduction' => 'required',
     );
 }
